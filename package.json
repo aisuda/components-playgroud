@@ -1,7 +1,6 @@
 {
-  "name": "react-demo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "components-playground-fork",
+  "version": "0.0.1",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -14,7 +13,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "^3.9.7",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "jszip": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,8 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "jszip": "^3.5.0"
   }
 }
