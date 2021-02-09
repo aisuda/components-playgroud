@@ -28,7 +28,7 @@ export function registerComponents(
     const item = items[index];
 
     // 其他用法或者被禁用的，直接跳过
-    if (item.type === 3) {
+    if (item.usage === 3) {
       return;
     }
 
@@ -50,7 +50,7 @@ export function registerComponents(
 
     item.key = 'custom-' + item.key;
 
-    if (item.type === 0) {
+    if (item.usage === 0) {
       rendererConfig.test = new RegExp(`(^|\\/)${item.key}$`);
       rendererConfig.weight = -200;
       rendererConfig.name = item.key;
@@ -61,7 +61,7 @@ export function registerComponents(
     }
 
     rendererConfig.type = item.key;
-    registerMap[item.type](rendererConfig);
+    registerMap[item.usage](rendererConfig);
   }
 }
 
