@@ -23,6 +23,6 @@ npm start
 
 导入到爱速搭解析时，会自动根据文件名生成对应的组件 key，并在前加 `custom-` 前缀。
 
-例如：一个名字为 `vue-text.js` 的组件文件，导入后，是通过 `custom-vue-text` 来使用的。
+例如：一个名字为 `vue-text.js` 的组件文件，导入后，是通过 `"type": "custom-vue-text"` 来使用的。
 
 所以组件的文件名不可以重复
