@@ -22,6 +22,9 @@ import VueText from './components/vue/formitem/vue-text';
 import VueSelect from './components/vue/options/vue-select';
 import HelloVue from './components/vue/renderer/hello-vue';
 
+// util
+import './util/hello.js';
+
 registerComponents([
   // jquery
   {

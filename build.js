@@ -44,6 +44,30 @@ for (const item of items) {
   );
 }
 
+const utils = fileDisplay('./src/util');
+
+for (const util of utils) {
+  if (!/src\/util\/(.+)\.([js|jsx|tsx])+/.test(util)) {
+    continue;
+  }
+
+  const source = fs.readFileSync(util).toString();
+  const name = RegExp.$1.replace(/\//g, '-');
+
+  zip.file(
+    `util-${name}.json`,
+    JSON.stringify({
+      name,
+      framework: 0,
+      usage: 3,
+      type: `util-${name}`,
+      source,
+      status: 1,
+      description: ''
+    })
+  );
+}
+
 zip
   .generateNodeStream({type: 'nodebuffer', streamFiles: true})
   .pipe(fs.createWriteStream('components.zip'));
