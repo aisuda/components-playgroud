@@ -1,8 +1,9 @@
 // @ts-ignore
 import $ from 'jquery';
+import './jquery-text-style.scss';
 
 export default {
-  template: `<input id="j_name" />`,
+  template: `<input class="txt" id="j_name" />`,
 
   onMount(props) {
     $('#j_name').attr('name', props.name);

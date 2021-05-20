@@ -14,12 +14,14 @@ const usageMap = {
   options: 2
 };
 
+const basePath = 'src/components/';
+
 const zip = new JSZip();
-const items = fileDisplay('./src/components');
+const items = fileDisplay(basePath);
 
 for (const item of items) {
   const source = fs.readFileSync(item).toString();
-  const parts = /src\/components\/([jquery|react|vue]+)\/([renderer|formitem|options]+)\/(.+).(js|jsx|tsx)/.exec(
+  const parts = /src\/components\/([jquery|react|vue]+)\/([renderer|formitem|options]+)\/(.+)\/(.+)(?<!-plugin).(tsx|jsx|js)/.exec(
     item
   );
 
@@ -28,7 +30,40 @@ for (const item of items) {
     continue;
   }
 
-  const [_, framework, usage, name, ext] = parts;
+  const [_, framework, usage, folderName, name, ext] = parts;
+  let entry = [name]; // 资源入口
+  let files = [{ // 文件源码
+    name,
+    type: 'component',
+    source,
+    ext
+  }];
+  const cmptPath = `${basePath}${framework}/${usage}/${folderName}/`;
+
+  // 一个样式文件就可以了，scss格式
+  const styleFile = source.match(/import (\"|\')(\.\/.+\.scss)\1/);
+  if (styleFile) {
+    const style = fs.readFileSync(path.resolve(cmptPath, styleFile[0].match(/import \'(\S*)'/)[1])).toString();
+    files.push({
+      name: `${name}-style`,
+      type: 'style',
+      source: style,
+      ext: 'scss'
+    });
+  }
+
+  const pluginFile = fs.existsSync(`${cmptPath}plugin/`) && fileDisplay(`${cmptPath}plugin/`);
+  if (pluginFile) {
+    // 一个组件对应一个插件
+    const plugin = fs.readFileSync(`./${pluginFile[0]}`).toString();
+    entry.push(`${name}-plugin`)
+    files.push({
+      name: `${name}-plugin`,
+      type: 'plugin',
+      source: plugin,
+      ext: pluginFile[0].replace(/.+\./, '')
+    });
+  }
 
   zip.file(
     `component-${name}.json`,
@@ -38,11 +73,14 @@ for (const item of items) {
       usage: usageMap[usage],
       type: name,
       source,
+      entry: JSON.stringify(entry),
+      files,
       status: 1,
       description: ''
     })
   );
 }
+
 
 const utils = fileDisplay('./src/util');
 

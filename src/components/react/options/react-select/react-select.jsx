@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Test extends React.PureComponent {
+export default class MyReactSelect extends React.PureComponent {
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);

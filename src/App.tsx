@@ -1,26 +1,26 @@
 import React from 'react';
-import {render} from 'amis';
+import {Route, Switch} from 'react-router-dom';
+import Editor from './editor/Editor';
 import axios from 'axios';
 import copy from 'copy-to-clipboard';
+import {render} from 'amis';
 import {toast} from 'amis/lib/components/Toast';
 import {Framework, registerComponents, Usage} from './util';
 
-import '../node_modules/amis/lib/themes/cxd.css';
-
 // jquery
-import JqueryText from './components/jquery/formitem/jquery-text';
-import JquerySelect from './components/jquery/options/jquery-select';
-import HelloJquery from './components/jquery/renderer/hello-jquery';
+import JqueryText from './components/jquery/formitem/jquery-text/jquery-text';
+import JquerySelect from './components/jquery/options/jquery-select/jquery-select';
+import HelloJquery from './components/jquery/renderer/hello-jquery/hello-jquery';
 
 // reqct
-import ReactText from './components/react/formitem/react-text';
-import ReactSelect from './components/react/options/react-select';
-import HelloReact from './components/react/renderer/hello-react';
+import ReactText from './components/react/formitem/react-text/react-text';
+import ReactSelect from './components/react/options/react-select/react-select';
+import HelloReact from './components/react/renderer/hello-react/hello-react';
 
 // vue
-import VueText from './components/vue/formitem/vue-text';
-import VueSelect from './components/vue/options/vue-select';
-import HelloVue from './components/vue/renderer/hello-vue';
+import VueText from './components/vue/formitem/vue-text/vue-text';
+import VueSelect from './components/vue/options/vue-select/vue-select';
+import HelloVue from './components/vue/renderer/hello-vue/hello-vue';
 
 // util
 import './util/hello.js';
@@ -87,7 +87,7 @@ registerComponents([
   }
 ]);
 
-const App = () => (
+const Components = () => (
   <>
     {render(
       {
@@ -307,4 +307,11 @@ const App = () => (
   </>
 );
 
-export default App;
+export default function App() {
+  return (
+    <Switch>
+      <Route exact path="/" component={Components} />
+      <Route path="/editor" component={Editor} />
+    </Switch>
+  );
+}
