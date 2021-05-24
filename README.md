@@ -8,11 +8,17 @@ npm i
 
 # 开启本地服务
 npm start
+
+# 访问
+组件测试：http://localhost:3000/
+组件编辑器插件测试：http://localhost:3000/editor
 ```
+
+
 
 在对应的文件夹下，新建组件文件，并编写代码，例如：
 
-- 在 `src/components/vue/formitem` 目录下新建文件，导入到爱速搭后，会解析为 **vue 表单项** 组件。
+- 在 `src/components/vue/formitem` 目录下新建组件文件，文件夹内可以包括组件文件、样式文件（只支持`.scss`），如果需要开发编辑器插件，可以在组件文件夹目录下新建`plugin`目录，该目录包括组件插件文件，导入到爱速搭后，会解析为 **vue 表单项** 组件。
 - 在 `src/util` 目录下新建文件，导入到爱速搭后，会解析为 **其他类型** 的组件。
 
 > 文件支持 js、jsx、tsx 后缀

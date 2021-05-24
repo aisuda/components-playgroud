@@ -1,0 +1,160 @@
+.Editor-header {
+    // position: relative;
+    text-align: right;
+    background: #3a3f51;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+  
+    .navbar-brand {
+      float: left !important;
+    }
+  }
+  
+  .Editor-title {
+    padding: 15px;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+  }
+  
+  .Editor-previewToggler {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 15px;
+    color: #c1c4c9;
+  }
+  
+  .Editor-headerBtns {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .Editor-headerBtnItem {
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    border-left: 1px solid #595c65;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #c1c4c9;
+  
+    > svg {
+      display: inline-block;
+      fill: #c1c4c9;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 4px;
+    }
+  
+    &:hover {
+      color: #fff;
+      background-color: rgb(46, 50, 67);
+  
+      > svg {
+        fill: #fff;
+      }
+    }
+  
+    &.disabled {
+      color: #8b8e99;
+      pointer-events: none;
+      cursor: default;
+  
+      > svg {
+        fill: #8b8e99;
+      }
+    }
+  
+    &.is-active {
+      color: var(--primary);
+      > svg {
+        fill: var(--primary);
+      }
+    }
+  
+    &.b-l-none {
+      border-left: none;
+    }
+  }
+  
+  .Editor-body {
+    position: relative;
+    display: flex;
+    height: 100%;
+  
+    > .cxd-Drawer {
+      position: relative;
+      display: inline;
+      overflow: visible;
+  
+      &::before {
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+    }
+  }
+  
+  .Editor-inner {
+    width: 0;
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+    > .MDEditor {
+      position: absolute;
+    }
+  
+    > .fr-box {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+  
+      > .fr-top {
+        border-top: none;
+      }
+  
+      > .fr-wrapper {
+        box-shadow: none !important;
+      }
+    }
+  
+    > .ae-Editor {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  }
+  
+  // 页面莫名的滚动条就是这货。
+  .monaco-aria-container {
+    top: -9999px;
+  }
+  
+  // 还有这货
+  .overflowingContentWidgets {
+    margin-top: -99999px;
+  }
+  
+  .ae-Settings-tabs-content .LazyRenderWrap {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
+    > .ae-Settings-content {
+      flex-grow: 1;
+      height: 0;
+    }
+  }
+  
+  [data-renderer='suda-model-list'][data-region='columns'] > .ae-AddBtn {
+    position: absolute;
+    left: -30px;
+    top: 5px;
+  }
+  

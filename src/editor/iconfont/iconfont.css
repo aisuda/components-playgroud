@@ -1,0 +1,3195 @@
+/*csshint-disable*/
+
+@font-face {
+	font-family: iconfont;
+	src: url(./iconfont.eot);
+	src: url(./iconfont.eot#iefix) format('embedded-opentype'), url('./iconfont.woff2?__inline') format('woff2'), url(./iconfont.woff) format('woff'), url(./iconfont.ttf) format('truetype'), url(./iconfont.svg#iconfont) format('svg')
+}
+
+.iconfont {
+	font-family: iconfont!important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.icon-master:before {
+	content: "\e91a"
+}
+
+.icon-jiedian:before {
+	content: "\e919"
+}
+
+.icon-yunjisuan:before {
+	content: "\e918"
+}
+
+.icon-bmr-kafka:before {
+	content: "\e917"
+}
+
+.icon-bmr-hbase:before {
+	content: "\e916"
+}
+
+.icon-bmr-hadoop:before {
+	content: "\e915"
+}
+
+.icon-bmr-druid:before {
+	content: "\e914"
+}
+
+.icon-cpts:before {
+	content: "\e913"
+}
+
+.icon-edap-tool-btn-add:before {
+	content: "\e912"
+}
+
+.icon-edap-hadoop:before {
+	content: "\e911"
+}
+
+.icon-edap-plugin-spark:before {
+	content: "\e910"
+}
+
+.icon-edap-plugin-shell:before {
+	content: "\e90f"
+}
+
+.icon-edap-plugin-python:before {
+	content: "\e90e"
+}
+
+.icon-edap-plugin-group:before {
+	content: "\e90d"
+}
+
+.icon-edap-tool-execute:before {
+	content: "\e90c"
+}
+
+.icon-edap-tool-async:before {
+	content: "\e90b"
+}
+
+.icon-edap-tool-sync:before {
+	content: "\e90a"
+}
+
+.icon-edap-tool-stop:before {
+	content: "\e909"
+}
+
+.icon-edap-tool-manual:before {
+	content: "\e908"
+}
+
+.icon-edap-tool-setting:before {
+	content: "\e907"
+}
+
+.icon-edap-tool-plan:before {
+	content: "\e906"
+}
+
+.icon-edap-tool-format:before {
+	content: "\e905"
+}
+
+.icon-edap-tool-import:before {
+	content: "\e904"
+}
+
+.icon-edap-tool-output:before {
+	content: "\e903"
+}
+
+.icon-edap-tool-save:before {
+	content: "\e902"
+}
+
+.icon-edap-plugin-more:before {
+	content: "\e901"
+}
+
+.icon-edap-folder-close:before {
+	content: "\e900"
+}
+
+.icon-edap-folder-open:before {
+	content: "\e8ff"
+}
+
+.icon-edap-mapping:before {
+	content: "\e8fe"
+}
+
+.icon-edap-analyse:before {
+	content: "\e8f9"
+}
+
+.icon-edap-file:before {
+	content: "\e8fa"
+}
+
+.icon-edap-sink:before {
+	content: "\e8fb"
+}
+
+.icon-edap-source:before {
+	content: "\e8fc"
+}
+
+.icon-edap-transform:before {
+	content: "\e8fd"
+}
+
+.icon-resource-recycle:before {
+	content: "\e8f8"
+}
+
+.icon-enterprise-org:before {
+	content: "\e8f7"
+}
+
+.icon-tag-management:before {
+	content: "\e8f6"
+}
+
+.icon-isv:before {
+	content: "\e8f5"
+}
+
+.icon-ccr:before {
+	content: "\e8f4"
+}
+
+.icon-protect-node:before {
+	content: "\e8f3"
+}
+
+.icon-rabbitmq:before {
+	content: "\e8f2"
+}
+
+.icon-idaas:before {
+	content: "\e8ef"
+}
+
+.icon-ai-iqi:before {
+	content: "\e8f0"
+}
+
+.icon-tuoguan:before {
+	content: "\e8f1"
+}
+
+.icon-vc-sdk:before {
+	content: "\e8ee"
+}
+
+.icon-queue:before {
+	content: "\e8e3"
+}
+
+.icon-Glasses:before {
+	content: "\e8e4"
+}
+
+.icon-filter1:before {
+	content: "\e8e5"
+}
+
+.icon-closed:before {
+	content: "\e8e6"
+}
+
+.icon-terminated:before {
+	content: "\e8e7"
+}
+
+.icon-database:before {
+	content: "\e8e8"
+}
+
+.icon-stopped:before {
+	content: "\e8e9"
+}
+
+.icon-running1:before {
+	content: "\e8ea"
+}
+
+.icon-table:before {
+	content: "\e8eb"
+}
+
+.icon-failed:before {
+	content: "\e8ec"
+}
+
+.icon-folder1:before {
+	content: "\e8ed"
+}
+
+.icon-xunixiaohao:before {
+	content: "\e8e2"
+}
+
+.icon-vms:before {
+	content: "\e8e1"
+}
+
+.icon-pns:before {
+	content: "\e8e0"
+}
+
+.icon-bss-no-effect:before {
+	content: "\e8df"
+}
+
+.icon-bss-risk:before {
+	content: "\e8dd"
+}
+
+.icon-bss-in-protection:before {
+	content: "\e8de"
+}
+
+.icon-video-class:before {
+	content: "\e8dc"
+}
+
+.icon-abc-stack:before {
+	content: "\e8db"
+}
+
+.icon-iqi:before {
+	content: "\e8da"
+}
+
+.icon-cos:before {
+	content: "\e8d9"
+}
+
+.icon-https:before {
+	content: "\e8d8"
+}
+
+.icon-aca:before {
+	content: "\e8d7"
+}
+
+.icon-lps:before {
+	content: "\e8d6"
+}
+
+.icon-bci:before {
+	content: "\e8d5"
+}
+
+.icon-pdc-manage:before {
+	content: "\e8cf"
+}
+
+.icon-pdc-aksk:before {
+	content: "\e8d0"
+}
+
+.icon-pdc-overview:before {
+	content: "\e8d1"
+}
+
+.icon-pdc-apply:before {
+	content: "\e8d2"
+}
+
+.icon-pdc-task:before {
+	content: "\e8d3"
+}
+
+.icon-pdc-share:before {
+	content: "\e8d4"
+}
+
+.icon-sugar:before {
+	content: "\e8ce"
+}
+
+.icon-ils:before {
+	content: "\e8cd"
+}
+
+.icon-acg-logo:before {
+	content: "\e8cc"
+}
+
+.icon-cnap:before {
+	content: "\e8cb"
+}
+
+.icon-location_blank:before {
+	content: "\e8ca"
+}
+
+.icon-suggestion:before {
+	content: "\e8c9"
+}
+
+.icon-big-v:before {
+	content: "\e8c7"
+}
+
+.icon-full-screen-square:before {
+	content: "\e8c8"
+}
+
+.icon-bct:before {
+	content: "\e8c6"
+}
+
+.icon-standard_abc:before {
+	content: "\e8c5"
+}
+
+.icon-ltsa:before {
+	content: "\e8c1"
+}
+
+.icon-rtsa:before {
+	content: "\e8c2"
+}
+
+.icon-ltda:before {
+	content: "\e8c3"
+}
+
+.icon-rtda:before {
+	content: "\e8c4"
+}
+
+.icon-shape:before {
+	content: "\e8c0"
+}
+
+.icon-bell:before {
+	content: "\e8bf"
+}
+
+.icon-standard_bts:before {
+	content: "\e8be"
+}
+
+.icon-shangxiaicon:before {
+	content: "\e8bd"
+}
+
+.icon-duanshipin:before {
+	content: "\e8bb"
+}
+
+.icon-chuanmei:before {
+	content: "\e8bc"
+}
+
+.icon-triangle-alarm:before {
+	content: "\e8ba"
+}
+
+.icon-channel:before {
+	content: "\e8b9"
+}
+
+.icon-cfs:before {
+	content: "\e8b8"
+}
+
+.icon-bbe:before {
+	content: "\e8b7"
+}
+
+.icon-xiaolvyun:before {
+	content: "\e8b6"
+}
+
+.icon-limit:before {
+	content: "\e8b5"
+}
+
+.icon-console-drag:before {
+	content: "\e8b4"
+}
+
+.icon-console-trash:before {
+	content: "\e8b1"
+}
+
+.icon-console-more-option:before {
+	content: "\e8b2"
+}
+
+.icon-console-setting:before {
+	content: "\e8b3"
+}
+
+.icon-duhome:before {
+	content: "\e8b0"
+}
+
+.icon-unit-new:before {
+	content: "\e8af"
+}
+
+.icon-bior:before {
+	content: "\e8ae"
+}
+
+.icon-easydl:before {
+	content: "\e8ad"
+}
+
+.icon-ethereum:before {
+	content: "\e8aa"
+}
+
+.icon-xchain:before {
+	content: "\e8ab"
+}
+
+.icon-fabric:before {
+	content: "\e8ac"
+}
+
+.icon-protect:before {
+	content: "\e8a9"
+}
+
+.icon-pingo:before {
+	content: "\e8a8"
+}
+
+.icon-bsc:before {
+	content: "\e8a7"
+}
+
+.icon-switch:before {
+	content: "\e8a6"
+}
+
+.icon-ai-market-buyer:before {
+	content: "\e8a4"
+}
+
+.icon-ai-market-supplier:before {
+	content: "\e8a5"
+}
+
+.icon-filter:before {
+	content: "\e8a3"
+}
+
+.icon-mongodb:before {
+	content: "\e8a2"
+}
+
+.icon-bid:before {
+	content: "\e8a1"
+}
+
+.icon-kms:before {
+	content: "\e8a0"
+}
+
+.icon-insight:before {
+	content: "\e89f"
+}
+
+.icon-jarvis:before {
+	content: "\e89e"
+}
+
+.icon-dumap:before {
+	content: "\e89c"
+}
+
+.icon-ccc:before {
+	content: "\e89d"
+}
+
+.icon-bbm:before {
+	content: "\e89b"
+}
+
+.icon-searchforum:before {
+	content: "\e899"
+}
+
+.icon-searchmarket:before {
+	content: "\e89a"
+}
+
+.icon-api-platform:before {
+	content: "\e894"
+}
+
+.icon-header-authentication:before {
+	content: "\e895"
+}
+
+.icon-start-guide:before {
+	content: "\e896"
+}
+
+.icon-header-product-doc:before {
+	content: "\e897"
+}
+
+.icon-self-service:before {
+	content: "\e898"
+}
+
+.icon-yuyinfuwu:before {
+	content: "\e893"
+}
+
+.icon-cvm-audio-file:before {
+	content: "\e890"
+}
+
+.icon-cvm-text2audio:before {
+	content: "\e891"
+}
+
+.icon-cvm-phone-number:before {
+	content: "\e892"
+}
+
+.icon-hisk:before {
+	content: "\e88f"
+}
+
+.icon-itm:before {
+	content: "\e88e"
+}
+
+.icon-host-eye:before {
+	content: "\e88d"
+}
+
+.icon-ivc:before {
+	content: "\e884"
+}
+
+.icon-thin-more:before {
+	content: "\e88c"
+}
+
+.icon-auto-scaling:before {
+	content: "\e88b"
+}
+
+.icon-thin-arrow-top:before {
+	content: "\e88a"
+}
+
+.icon-subtask:before {
+	content: "\e889"
+}
+
+.icon-dba:before {
+	content: "\e888"
+}
+
+.icon-bfe:before {
+	content: "\e887"
+}
+
+.icon-infinite:before {
+	content: "\e886"
+}
+
+.icon-dealrecord:before {
+	content: "\e885"
+}
+
+.icon-deployment-mode:before {
+	content: "\e880"
+}
+
+.icon-operation-mode:before {
+	content: "\e881"
+}
+
+.icon-carrieroperator-line:before {
+	content: "\e882"
+}
+
+.icon-tech-spec:before {
+	content: "\e883"
+}
+
+.icon-aibody:before {
+	content: "\e87f"
+}
+
+.icon-httpdns:before {
+	content: "\e87e"
+}
+
+.icon-bcmedit:before {
+	content: "\e873"
+}
+
+.icon-bcmquestion:before {
+	content: "\e874"
+}
+
+.icon-bcmmore:before {
+	content: "\e875"
+}
+
+.icon-bcmtrash:before {
+	content: "\e876"
+}
+
+.icon-bcmlayout:before {
+	content: "\e877"
+}
+
+.icon-bcmcalendar:before {
+	content: "\e878"
+}
+
+.icon-bcmalarm:before {
+	content: "\e879"
+}
+
+.icon-bcmconsole:before {
+	content: "\e87a"
+}
+
+.icon-bcmchart:before {
+	content: "\e87b"
+}
+
+.icon-bcmsearch:before {
+	content: "\e87c"
+}
+
+.icon-bcmrefresh:before {
+	content: "\e87d"
+}
+
+.icon-bcs:before {
+	content: "\e872"
+}
+
+.icon-edge:before {
+	content: "\e871"
+}
+
+.icon-auto-snapshot:before {
+	content: "\e86f"
+}
+
+.icon-message-queue:before {
+	content: "\e870"
+}
+
+.icon-eth:before {
+	content: "\e86c"
+}
+
+.icon-dapp:before {
+	content: "\e86d"
+}
+
+.icon-contract:before {
+	content: "\e86e"
+}
+
+.icon-eyeclose:before {
+	content: "\e86b"
+}
+
+.icon-ids:before {
+	content: "\e86a"
+}
+
+.icon-file-search:before {
+	content: "\e867"
+}
+
+.icon-file-list:before {
+	content: "\e868"
+}
+
+.icon-file-status:before {
+	content: "\e869"
+}
+
+.icon-all-services:before {
+	content: "\e866"
+}
+
+.icon-marketing-bottom-put:before {
+	content: "\e863"
+}
+
+.icon-marketing-order-put:before {
+	content: "\e864"
+}
+
+.icon-marketing-ad-put:before {
+	content: "\e865"
+}
+
+.icon-download:before {
+	content: "\e678"
+}
+
+.icon-app-order-list:before {
+	content: "\e861"
+}
+
+.icon-app-finance-overview:before {
+	content: "\e862"
+}
+
+.icon-camera:before {
+	content: "\e860"
+}
+
+.icon-user-pause-ratio:before {
+	content: "\e85b"
+}
+
+.icon-tm-mobile:before {
+	content: "\e85c"
+}
+
+.icon-online-user:before {
+	content: "\e85d"
+}
+
+.icon-play-ratio:before {
+	content: "\e85e"
+}
+
+.icon-fs-screen-time:before {
+	content: "\e85f"
+}
+
+.icon-scroll-top:before {
+	content: "\e75e"
+}
+
+.icon-auto-capacity:before {
+	content: "\e85a"
+}
+
+.icon-cvca:before {
+	content: "\e859"
+}
+
+.icon-agent:before {
+	content: "\e781"
+}
+
+.icon-finance:before {
+	content: "\e773"
+}
+
+.icon-organization:before {
+	content: "\e858"
+}
+
+.icon-header-help:before {
+	content: "\e796"
+}
+
+.icon-process-tobuy-new:before {
+	content: "\e855"
+}
+
+.icon-process-login-new:before {
+	content: "\e856"
+}
+
+.icon-process-qualify-new:before {
+	content: "\e857"
+}
+
+.icon-arrow-left:before {
+	content: "\e854"
+}
+
+.icon-trash-alt:before {
+	content: "\e853"
+}
+
+.icon-eye:before {
+	content: "\e852"
+}
+
+.icon-ssp:before {
+	content: "\e746"
+}
+
+.icon-audit-failed:before {
+	content: "\e7d2"
+}
+
+.icon-audit-passed:before {
+	content: "\e7d3"
+}
+
+.icon-audit-progressing:before {
+	content: "\e851"
+}
+
+.icon-personal-dev:before {
+	content: "\e7c8"
+}
+
+.icon-big-website:before {
+	content: "\e7c9"
+}
+
+.icon-process-tobuy:before {
+	content: "\e7ca"
+}
+
+.icon-mirror-experience:before {
+	content: "\e7cb"
+}
+
+.icon-enterprise-website:before {
+	content: "\e7cc"
+}
+
+.icon-process-login:before {
+	content: "\e7cd"
+}
+
+.icon-process-qualify:before {
+	content: "\e7ce"
+}
+
+.icon-promotion:before {
+	content: "\e7cf"
+}
+
+.icon-enterprice-app:before {
+	content: "\e7d0"
+}
+
+.icon-safety:before {
+	content: "\e7d1"
+}
+
+.icon-convm:before {
+	content: "\e850"
+}
+
+.icon-cce-node:before {
+	content: "\e84f"
+}
+
+.icon-auto-renew:before {
+	content: "\e84e"
+}
+
+.icon-bond:before {
+	content: "\e84d"
+}
+
+.icon-insurance:before {
+	content: "\e848"
+}
+
+.icon-note:before {
+	content: "\e849"
+}
+
+.icon-finance1:before {
+	content: "\e84a"
+}
+
+.icon-big-data:before {
+	content: "\e84b"
+}
+
+.icon-bank:before {
+	content: "\e84c"
+}
+
+.icon-like:before {
+	content: "\e7c7"
+}
+
+.icon-fin-group:before {
+	content: "\e845"
+}
+
+.icon-fin-center:before {
+	content: "\e846"
+}
+
+.icon-fin-bank:before {
+	content: "\e847"
+}
+
+.icon-function:before {
+	content: "\e842"
+}
+
+.icon-database-view:before {
+	content: "\e843"
+}
+
+.icon-procedure:before {
+	content: "\e844"
+}
+
+.icon-mct-pending:before {
+	content: "\e841"
+}
+
+.icon-drds:before {
+	content: "\e840"
+}
+
+.icon-cfc:before {
+	content: "\e7c6"
+}
+
+.icon-afd:before {
+	content: "\e83f"
+}
+
+.icon-pre-sale-tel:before {
+	content: "\e7c5"
+}
+
+.icon-roboticvision:before {
+	content: "\e83e"
+}
+
+.icon-audio:before {
+	content: "\e7c4"
+}
+
+.icon-hosteye:before {
+	content: "\e83b"
+}
+
+.icon-dcs:before {
+	content: "\e7c3"
+}
+
+.icon-download-alt:before {
+	content: "\e83d"
+}
+
+.icon-adx-pause:before {
+	content: "\e7c2"
+}
+
+.icon-purchase-length-sale:before {
+	content: "\e7c1"
+}
+
+.icon-bdtrd:before {
+	content: "\e83c"
+}
+
+.icon-ad-audit:before {
+	content: "\e7c0"
+}
+
+.icon-dsp-se:before {
+	content: "\e7bd"
+}
+
+.icon-dsp-console:before {
+	content: "\e7be"
+}
+
+.icon-dsp-biz:before {
+	content: "\e7bf"
+}
+
+.icon-srd:before {
+	content: "\e83a"
+}
+
+.icon-docs:before {
+	content: "\e765"
+}
+
+.icon-product-price:before {
+	content: "\e76a"
+}
+
+.icon-product-forum:before {
+	content: "\e776"
+}
+
+.icon-record-help:before {
+	content: "\e7b6"
+}
+
+.icon-customer-tel:before {
+	content: "\e7bc"
+}
+
+.icon-single-download:before {
+	content: "\e75a"
+}
+
+.icon-official-notice:before {
+	content: "\e75b"
+}
+
+.icon-official-forum:before {
+	content: "\e75c"
+}
+
+.icon-contact-us:before {
+	content: "\e75d"
+}
+
+.icon-scan-download:before {
+	content: "\e75f"
+}
+
+.icon-submit-ticket:before {
+	content: "\e760"
+}
+
+.icon-cloud-secretary:before {
+	content: "\e761"
+}
+
+.icon-feedback:before {
+	content: "\e762"
+}
+
+.icon-reward-feedback:before {
+	content: "\e763"
+}
+
+.icon-business-consult:before {
+	content: "\e764"
+}
+
+.icon-paddle-set:before {
+	content: "\e836"
+}
+
+.icon-paddle-upload:before {
+	content: "\e837"
+}
+
+.icon-paddle-download:before {
+	content: "\e838"
+}
+
+.icon-cmd:before {
+	content: "\e839"
+}
+
+.icon-dns:before {
+	content: "\e835"
+}
+
+.icon-thin-arrow-left:before {
+	content: "\e759"
+}
+
+.icon-brs:before {
+	content: "\e834"
+}
+
+.icon-new-search:before {
+	content: "\e758"
+}
+
+.icon-thin-arrow:before {
+	content: "\e757"
+}
+
+.icon-electricity-sales-solution:before {
+	content: "\e756"
+}
+
+.icon-build-site:before {
+	content: "\e661"
+}
+
+.icon-huike:before {
+	content: "\e662"
+}
+
+.icon-operation:before {
+	content: "\e663"
+}
+
+.icon-record:before {
+	content: "\e669"
+}
+
+.icon-mike:before {
+	content: "\e753"
+}
+
+.icon-zhike:before {
+	content: "\e754"
+}
+
+.icon-mirror:before {
+	content: "\e755"
+}
+
+.icon-new-tag:before {
+	content: "\e660"
+}
+
+.icon-itma:before {
+	content: "\e833"
+}
+
+.icon-ai-image-search:before {
+	content: "\e831"
+}
+
+.icon-ai-image-recognition:before {
+	content: "\e832"
+}
+
+.icon-bch-ip:before {
+	content: "\e830"
+}
+
+.icon-hme:before {
+	content: "\e65f"
+}
+
+.icon-iotunicom:before {
+	content: "\e82f"
+}
+
+.icon-rtb-app:before {
+	content: "\e637"
+}
+
+.icon-rtb-agency:before {
+	content: "\e639"
+}
+
+.icon-rtb-media:before {
+	content: "\e64a"
+}
+
+.icon-rtb-big:before {
+	content: "\e653"
+}
+
+.icon-rtb-sem:before {
+	content: "\e654"
+}
+
+.icon-rtb-data:before {
+	content: "\e655"
+}
+
+.icon-rtb-dsp:before {
+	content: "\e65d"
+}
+
+.icon-rtb-web:before {
+	content: "\e65e"
+}
+
+.icon-bdl-gpu:before {
+	content: "\e82b"
+}
+
+.icon-bdl-cpu:before {
+	content: "\e82c"
+}
+
+.icon-bdl-tensorboard:before {
+	content: "\e82d"
+}
+
+.icon-bdl-memory:before {
+	content: "\e82e"
+}
+
+.icon-byapi:before {
+	content: "\e622"
+}
+
+.icon-chart-item:before {
+	content: "\e61d"
+}
+
+.icon-native-ads:before {
+	content: "\e82a"
+}
+
+.icon-unbind:before {
+	content: "\e67c"
+}
+
+.icon-bind:before {
+	content: "\e67b"
+}
+
+.icon-edit:before {
+	content: "\e829"
+}
+
+.icon-copy:before {
+	content: "\e603"
+}
+
+.icon-nlptec:before {
+	content: "\e827"
+}
+
+.icon-kgpie:before {
+	content: "\e828"
+}
+
+.icon-vcs:before {
+	content: "\e7fd"
+}
+
+.icon-tts:before {
+	content: "\e74c"
+}
+
+.icon-imagetec:before {
+	content: "\e617"
+}
+
+.icon-speechtec:before {
+	content: "\e613"
+}
+
+.icon-kgtec:before {
+	content: "\e614"
+}
+
+.icon-artec:before {
+	content: "\e615"
+}
+
+.icon-vodtec:before {
+	content: "\e616"
+}
+
+.icon-cce:before {
+	content: "\e826"
+}
+
+.icon-videoSearch:before {
+	content: "\e60d"
+}
+
+.icon-videoPush:before {
+	content: "\e60e"
+}
+
+.icon-contentGet:before {
+	content: "\e60f"
+}
+
+.icon-contentDel:before {
+	content: "\e610"
+}
+
+.icon-contentAny:before {
+	content: "\e611"
+}
+
+.icon-contentSend:before {
+	content: "\e612"
+}
+
+.icon-linkOnline:before {
+	content: "\e60a"
+}
+
+.icon-beforeLink:before {
+	content: "\e60b"
+}
+
+.icon-testLink:before {
+	content: "\e60c"
+}
+
+.icon-link:before {
+	content: "\e6ba"
+}
+
+.icon-cli:before {
+	content: "\e825"
+}
+
+.icon-arp:before {
+	content: "\e752"
+}
+
+.icon-shopping-cart:before {
+	content: "\e824"
+}
+
+.icon-ai-resource:before {
+	content: "\e820"
+}
+
+.icon-ai-plat:before {
+	content: "\e821"
+}
+
+.icon-ai-app1:before {
+	content: "\e822"
+}
+
+.icon-ai-data:before {
+	content: "\e823"
+}
+
+.icon-adx:before {
+	content: "\e751"
+}
+
+.icon-data-mark:before {
+	content: "\e81e"
+}
+
+.icon-data-collection:before {
+	content: "\e81f"
+}
+
+.icon-apollo:before {
+	content: "\e74d"
+}
+
+.icon-shangqing-solution:before {
+	content: "\e750"
+}
+
+.icon-ar:before {
+	content: "\e74f"
+}
+
+.icon-tag:before {
+	content: "\e81c"
+}
+
+.icon-prop:before {
+	content: "\e81d"
+}
+
+.icon-asr:before {
+	content: "\e74a"
+}
+
+.icon-unit:before {
+	content: "\e74e"
+}
+
+.icon-wake:before {
+	content: "\e74b"
+}
+
+.icon-folder:before {
+	content: "\e81b"
+}
+
+.icon-imagecensoring:before {
+	content: "\e749"
+}
+
+.icon-information:before {
+	content: "\e81a"
+}
+
+.icon-calculator:before {
+	content: "\e819"
+}
+
+.icon-retail-solution:before {
+	content: "\e748"
+}
+
+.icon-E-Profile:before {
+	content: "\e747"
+}
+
+.icon-backup-solution:before {
+	content: "\e818"
+}
+
+.icon-overview-msg:before {
+	content: "\e812"
+}
+
+.icon-overview-invoice:before {
+	content: "\e813"
+}
+
+.icon-overview-agent:before {
+	content: "\e814"
+}
+
+.icon-overview-desc:before {
+	content: "\e815"
+}
+
+.icon-overview-instance:before {
+	content: "\e816"
+}
+
+.icon-overview-balance:before {
+	content: "\e817"
+}
+
+.icon-short-video-solution:before {
+	content: "\e811"
+}
+
+.icon-kg:before {
+	content: "\e810"
+}
+
+.icon-maximize:before {
+	content: "\e80e"
+}
+
+.icon-minimize:before {
+	content: "\e80f"
+}
+
+.icon-vcr:before {
+	content: "\e745"
+}
+
+.icon-prophet-solution:before {
+	content: "\e80d"
+}
+
+.icon-cloudadanti:before {
+	content: "\e609"
+}
+
+.icon-fpga:before {
+	content: "\e744"
+}
+
+.icon-video-circle:before {
+	content: "\e73b"
+}
+
+.icon-return:before {
+	content: "\e72f"
+}
+
+.icon-change-password:before {
+	content: "\e730"
+}
+
+.icon-data-sheet:before {
+	content: "\e733"
+}
+
+.icon-data-graph:before {
+	content: "\e734"
+}
+
+.icon-quit:before {
+	content: "\e735"
+}
+
+.icon-top1:before {
+	content: "\e736"
+}
+
+.icon-preview:before {
+	content: "\e737"
+}
+
+.icon-api:before {
+	content: "\e738"
+}
+
+.icon-top3:before {
+	content: "\e739"
+}
+
+.icon-top2:before {
+	content: "\e73a"
+}
+
+.icon-display-position:before {
+	content: "\e73c"
+}
+
+.icon-ios:before {
+	content: "\e73d"
+}
+
+.icon-android:before {
+	content: "\e73e"
+}
+
+.icon-flash:before {
+	content: "\e73f"
+}
+
+.icon-image:before {
+	content: "\e740"
+}
+
+.icon-click-rate:before {
+	content: "\e741"
+}
+
+.icon-click-amount:before {
+	content: "\e742"
+}
+
+.icon-display-amount:before {
+	content: "\e743"
+}
+
+.icon-color-circle:before {
+	content: "\e72e"
+}
+
+.icon-color-error:before {
+	content: "\e72c"
+}
+
+.icon-color-correct:before {
+	content: "\e72d"
+}
+
+.icon-baiduyun:before {
+	content: "\e72a"
+}
+
+.icon-shanchu:before {
+	content: "\e689"
+}
+
+.icon-bingpai:before {
+	content: "\e693"
+}
+
+.icon-icon-test:before {
+	content: "\e694"
+}
+
+.icon-huodongicon:before {
+	content: "\e6bf"
+}
+
+.icon-shangxin:before {
+	content: "\e6cc"
+}
+
+.icon-shupai:before {
+	content: "\e6da"
+}
+
+.icon-wode:before {
+	content: "\e6dc"
+}
+
+.icon-xialajiantou:before {
+	content: "\e6dd"
+}
+
+.icon-sousuo:before {
+	content: "\e6de"
+}
+
+.icon-xiaoxi:before {
+	content: "\e6e0"
+}
+
+.icon-x:before {
+	content: "\e6ec"
+}
+
+.icon-youjiantou:before {
+	content: "\e6ee"
+}
+
+.icon-duigou:before {
+	content: "\e6ef"
+}
+
+.icon-kongzhitai:before {
+	content: "\e6f0"
+}
+
+.icon-baiduqianbao:before {
+	content: "\e705"
+}
+
+.icon-zhifubao:before {
+	content: "\e706"
+}
+
+.icon-weixinqianbao:before {
+	content: "\e707"
+}
+
+.icon-daijinquan:before {
+	content: "\e708"
+}
+
+.icon-shimingrenzheng:before {
+	content: "\e70e"
+}
+
+.icon-shoushimima:before {
+	content: "\e710"
+}
+
+.icon-kefudianhua:before {
+	content: "\e715"
+}
+
+.icon-gongdanfankui:before {
+	content: "\e716"
+}
+
+.icon-shezhi:before {
+	content: "\e717"
+}
+
+.icon-xianxiadakuanzhanghao:before {
+	content: "\e71a"
+}
+
+.icon-yue:before {
+	content: "\e725"
+}
+
+.icon-yuezhangdan:before {
+	content: "\e727"
+}
+
+.icon-zhangdanguanli:before {
+	content: "\e728"
+}
+
+.icon-zhanghuxinxi:before {
+	content: "\e729"
+}
+
+.icon-waf:before {
+	content: "\e80c"
+}
+
+.icon-doc-feedback:before {
+	content: "\e680"
+}
+
+.icon-correct:before {
+	content: "\e67e"
+}
+
+.icon-bsg:before {
+	content: "\e679"
+}
+
+.icon-bdl:before {
+	content: "\e7a7"
+}
+
+.icon-setting:before {
+	content: "\e80b"
+}
+
+.icon-de:before {
+	content: "\e674"
+}
+
+.icon-app-tel:before {
+	content: "\e7fe"
+}
+
+.icon-app-wxpay:before {
+	content: "\e7ff"
+}
+
+.icon-app-consumption:before {
+	content: "\e800"
+}
+
+.icon-app-feedback:before {
+	content: "\e801"
+}
+
+.icon-app-verify:before {
+	content: "\e802"
+}
+
+.icon-app-balance:before {
+	content: "\e803"
+}
+
+.icon-app-bill:before {
+	content: "\e804"
+}
+
+.icon-app-alipay:before {
+	content: "\e805"
+}
+
+.icon-app-coupon:before {
+	content: "\e806"
+}
+
+.icon-app-account:before {
+	content: "\e807"
+}
+
+.icon-app-unionpay:before {
+	content: "\e808"
+}
+
+.icon-app-setting:before {
+	content: "\e809"
+}
+
+.icon-app-newsale:before {
+	content: "\e80a"
+}
+
+.icon-va:before {
+	content: "\e7fc"
+}
+
+.icon-vca:before {
+	content: "\e7fb"
+}
+
+.icon-ai-startup-solution:before {
+	content: "\e673"
+}
+
+.icon-warning-mark:before {
+	content: "\e7f9"
+}
+
+.icon-question-mark:before {
+	content: "\e7fa"
+}
+
+.icon-re:before {
+	content: "\e672"
+}
+
+.icon-speech:before {
+	content: "\e66a"
+}
+
+.icon-video_ai-solution:before {
+	content: "\e7f7"
+}
+
+.icon-face:before {
+	content: "\e66b"
+}
+
+.icon-ai-tv-instruction:before {
+	content: "\e7d4"
+}
+
+.icon-ai-vehicle-instruction:before {
+	content: "\e7d5"
+}
+
+.icon-ai-train:before {
+	content: "\e7d6"
+}
+
+.icon-ai-tv-show:before {
+	content: "\e7d7"
+}
+
+.icon-ai-travel:before {
+	content: "\e7d8"
+}
+
+.icon-ai-video:before {
+	content: "\e7d9"
+}
+
+.icon-ai-translation:before {
+	content: "\e7da"
+}
+
+.icon-ai-website:before {
+	content: "\e7db"
+}
+
+.icon-ai-weather:before {
+	content: "\e7dc"
+}
+
+.icon-ai-alarm:before {
+	content: "\e7dd"
+}
+
+.icon-ai-app:before {
+	content: "\e7de"
+}
+
+.icon-ai-calendar:before {
+	content: "\e7df"
+}
+
+.icon-ai-account:before {
+	content: "\e7e0"
+}
+
+.icon-ai-contacts:before {
+	content: "\e7e1"
+}
+
+.icon-ai-film-news:before {
+	content: "\e7e2"
+}
+
+.icon-ai-hotel:before {
+	content: "\e7e3"
+}
+
+.icon-ai-flight:before {
+	content: "\e7e4"
+}
+
+.icon-ai-instruction:before {
+	content: "\e7e5"
+}
+
+.icon-ai-knowledge:before {
+	content: "\e7e6"
+}
+
+.icon-ai-joke:before {
+	content: "\e7e7"
+}
+
+.icon-ai-message:before {
+	content: "\e7e8"
+}
+
+.icon-ai-music:before {
+	content: "\e7e9"
+}
+
+.icon-ai-navigate-instruction:before {
+	content: "\e7ea"
+}
+
+.icon-ai-map:before {
+	content: "\e7eb"
+}
+
+.icon-ai-novel:before {
+	content: "\e7ec"
+}
+
+.icon-ai-phone-charges:before {
+	content: "\e7ed"
+}
+
+.icon-ai-recipe:before {
+	content: "\e7ee"
+}
+
+.icon-ai-search:before {
+	content: "\e7ef"
+}
+
+.icon-ai-player:before {
+	content: "\e7f0"
+}
+
+.icon-ai-sns:before {
+	content: "\e7f1"
+}
+
+.icon-ai-radio:before {
+	content: "\e7f2"
+}
+
+.icon-ai-setting:before {
+	content: "\e7f3"
+}
+
+.icon-ai-story:before {
+	content: "\e7f4"
+}
+
+.icon-ai-stock:before {
+	content: "\e7f5"
+}
+
+.icon-ai-telephone:before {
+	content: "\e7f6"
+}
+
+.icon-dsp:before {
+	content: "\e7b7"
+}
+
+.icon-pctr:before {
+	content: "\e7b8"
+}
+
+.icon-adsel:before {
+	content: "\e7b9"
+}
+
+.icon-dmp:before {
+	content: "\e7ba"
+}
+
+.icon-adn:before {
+	content: "\e7bb"
+}
+
+.icon-close:before {
+	content: "\e6eb"
+}
+
+.icon-feedapi:before {
+	content: "\e7b5"
+}
+
+.icon-sem:before {
+	content: "\e7b3"
+}
+
+.icon-refererapi:before {
+	content: "\e7b2"
+}
+
+.icon-dts:before {
+	content: "\e7b4"
+}
+
+.icon-vpc:before {
+	content: "\e778"
+}
+
+.icon-verify:before {
+	content: "\e7ac"
+}
+
+.icon-calendar:before {
+	content: "\e7b1"
+}
+
+.icon-bmr:before {
+	content: "\e7ae"
+}
+
+.icon-wallet:before {
+	content: "\e7af"
+}
+
+.icon-verify-agent:before {
+	content: "\e7b0"
+}
+
+.icon-verify-email:before {
+	content: "\e7ab"
+}
+
+.icon-verify-mobile:before {
+	content: "\e7ad"
+}
+
+.icon-antiporn:before {
+	content: "\e7a9"
+}
+
+.icon-nlp:before {
+	content: "\e7aa"
+}
+
+.icon-modbus:before {
+	content: "\e7a8"
+}
+
+.icon-moladb:before {
+	content: "\e7a5"
+}
+
+.icon-bbs:before {
+	content: "\e7a6"
+}
+
+.icon-tsdb:before {
+	content: "\e7a2"
+}
+
+.icon-iotviz:before {
+	content: "\e7a3"
+}
+
+.icon-iotdm:before {
+	content: "\e7a4"
+}
+
+.icon-batch:before {
+	content: "\e791"
+}
+
+.icon-sr:before {
+	content: "\e792"
+}
+
+.icon-iotre:before {
+	content: "\e793"
+}
+
+.icon-beian:before {
+	content: "\e79c"
+}
+
+.icon-qss:before {
+	content: "\e79d"
+}
+
+.icon-iot:before {
+	content: "\e79e"
+}
+
+.icon-mat:before {
+	content: "\e79f"
+}
+
+.icon-bcd:before {
+	content: "\e7a0"
+}
+
+.icon-wmt:before {
+	content: "\e7a1"
+}
+
+.icon-ticket:before {
+	content: "\e797"
+}
+
+.icon-down-arrow:before {
+	content: "\e798"
+}
+
+.icon-search:before {
+	content: "\e799"
+}
+
+.icon-overview:before {
+	content: "\e79a"
+}
+
+.icon-header-message:before {
+	content: "\e79b"
+}
+
+.icon-iam-user:before {
+	content: "\e780"
+}
+
+.icon-collapse1:before {
+	content: "\e795"
+}
+
+.icon-cas:before {
+	content: "\e77e"
+}
+
+.icon-bes:before {
+	content: "\e77f"
+}
+
+.icon-network:before {
+	content: "\e794"
+}
+
+.icon-ddos:before {
+	content: "\e766"
+}
+
+.icon-accesskey:before {
+	content: "\e767"
+}
+
+.icon-gpu:before {
+	content: "\e768"
+}
+
+.icon-authinfo:before {
+	content: "\e769"
+}
+
+.icon-kafka:before {
+	content: "\e76b"
+}
+
+.icon-bml:before {
+	content: "\e76c"
+}
+
+.icon-palo:before {
+	content: "\e76d"
+}
+
+.icon-bls:before {
+	content: "\e76e"
+}
+
+.icon-eip:before {
+	content: "\e76f"
+}
+
+.icon-bos:before {
+	content: "\e770"
+}
+
+.icon-blb:before {
+	content: "\e771"
+}
+
+.icon-rds:before {
+	content: "\e772"
+}
+
+.icon-sms:before {
+	content: "\e774"
+}
+
+.icon-ses:before {
+	content: "\e775"
+}
+
+.icon-cdn:before {
+	content: "\e777"
+}
+
+.icon-scs:before {
+	content: "\e779"
+}
+
+.icon-di:before {
+	content: "\e77a"
+}
+
+.icon-doc:before {
+	content: "\e77b"
+}
+
+.icon-ocr:before {
+	content: "\e77c"
+}
+
+.icon-exit:before {
+	content: "\e77d"
+}
+
+.icon-bbc:before {
+	content: "\e782"
+}
+
+.icon-vod:before {
+	content: "\e783"
+}
+
+.icon-lss:before {
+	content: "\e784"
+}
+
+.icon-mct:before {
+	content: "\e785"
+}
+
+.icon-myaccount:before {
+	content: "\e786"
+}
+
+.icon-bss:before {
+	content: "\e787"
+}
+
+.icon-apm:before {
+	content: "\e788"
+}
+
+.icon-cds:before {
+	content: "\e789"
+}
+
+.icon-bae:before {
+	content: "\e78a"
+}
+
+.icon-bcc:before {
+	content: "\e78b"
+}
+
+.icon-bcm:before {
+	content: "\e78c"
+}
+
+.icon-mkt:before {
+	content: "\e78d"
+}
+
+.icon-bch:before {
+	content: "\e78e"
+}
+
+.icon-dcc:before {
+	content: "\e78f"
+}
+
+.icon-et:before {
+	content: "\e790"
+}
+
+.icon-arrow-right:before {
+	content: "\e63b"
+}
+
+.icon-running:before {
+	content: "\e63c"
+}
+
+.icon-clock:before {
+	content: "\e63d"
+}
+
+.icon-auditing:before {
+	content: "\e63e"
+}
+
+.icon-object:before {
+	content: "\e63f"
+}
+
+.icon-mount:before {
+	content: "\e640"
+}
+
+.icon-hold:before {
+	content: "\e641"
+}
+
+.icon-pie:before {
+	content: "\e642"
+}
+
+.icon-solution-doc:before {
+	content: "\e643"
+}
+
+.icon-sdktool:before {
+	content: "\e645"
+}
+
+.icon-product-doc:before {
+	content: "\e646"
+}
+
+.icon-user-guide:before {
+	content: "\e647"
+}
+
+.icon-contact:before {
+	content: "\e648"
+}
+
+.icon-notice:before {
+	content: "\e649"
+}
+
+.icon-beian-doc:before {
+	content: "\e644"
+}
+
+.icon-isp:before {
+	content: "\e64b"
+}
+
+.icon-security:before {
+	content: "\e64c"
+}
+
+.icon-serialise:before {
+	content: "\e64d"
+}
+
+.icon-site-manage:before {
+	content: "\e64e"
+}
+
+.icon-searchall:before {
+	content: "\e64f"
+}
+
+.icon-searchdoc:before {
+	content: "\e650"
+}
+
+.icon-searchsite:before {
+	content: "\e651"
+}
+
+.icon-zhidahao:before {
+	content: "\e635"
+}
+
+.icon-video:before {
+	content: "\e652"
+}
+
+.icon-admin:before {
+	content: "\e633"
+}
+
+.icon-cloud:before {
+	content: "\e634"
+}
+
+.icon-fc-ad:before {
+	content: "\e656"
+}
+
+.icon-pricing:before {
+	content: "\e657"
+}
+
+.icon-about:before {
+	content: "\e658"
+}
+
+.icon-reference:before {
+	content: "\e659"
+}
+
+.icon-authentication:before {
+	content: "\e65a"
+}
+
+.icon-bae4:before {
+	content: "\e65b"
+}
+
+.icon-baepro4:before {
+	content: "\e65c"
+}
+
+.icon-alarm-clock:before {
+	content: "\e664"
+}
+
+.icon-mvp:before {
+	content: "\e665"
+}
+
+.icon-round-right-fill:before {
+	content: "\e666"
+}
+
+.icon-month:before {
+	content: "\e667"
+}
+
+.icon-demand:before {
+	content: "\e668"
+}
+
+.icon-bmr-cluster:before {
+	content: "\e66c"
+}
+
+.icon-bmr-cluster-template:before {
+	content: "\e66d"
+}
+
+.icon-bmr-crontask:before {
+	content: "\e66e"
+}
+
+.icon-bmr-step:before {
+	content: "\e66f"
+}
+
+.icon-lss-stat:before {
+	content: "\e671"
+}
+
+.icon-table-trend:before {
+	content: "\e675"
+}
+
+.icon-typical-sample:before {
+	content: "\e67a"
+}
+
+.icon-horn:before {
+	content: "\e67d"
+}
+
+.icon-bcc-new:before {
+	content: "\e698"
+}
+
+.icon-blb-new:before {
+	content: "\e699"
+}
+
+.icon-bos-new:before {
+	content: "\e69a"
+}
+
+.icon-cds-new:before {
+	content: "\e69b"
+}
+
+.icon-cdn-new:before {
+	content: "\e69c"
+}
+
+.icon-rds-new:before {
+	content: "\e69d"
+}
+
+.icon-scs-new:before {
+	content: "\e69e"
+}
+
+.icon-moladb-new:before {
+	content: "\e69f"
+}
+
+.icon-bae-staff:before {
+	content: "\e67f"
+}
+
+.icon-vod-overview:before {
+	content: "\e682"
+}
+
+.icon-io:before {
+	content: "\e683"
+}
+
+.icon-processing:before {
+	content: "\e684"
+}
+
+.icon-agentlist:before {
+	content: "\e685"
+}
+
+.icon-policy:before {
+	content: "\e68e"
+}
+
+.icon-collaborator:before {
+	content: "\e68f"
+}
+
+.icon-contact1:before {
+	content: "\e690"
+}
+
+.icon-baseinfo:before {
+	content: "\e691"
+}
+
+.icon-qualify:before {
+	content: "\e692"
+}
+
+.icon-certificatelist:before {
+	content: "\e695"
+}
+
+.icon-letterlist:before {
+	content: "\e697"
+}
+
+.icon-bss-new:before {
+	content: "\e6a0"
+}
+
+.icon-bcm-new:before {
+	content: "\e6a1"
+}
+
+.icon-ses-new:before {
+	content: "\e6a2"
+}
+
+.icon-sms-new:before {
+	content: "\e6a3"
+}
+
+.icon-qss-new:before {
+	content: "\e6a4"
+}
+
+.icon-mat-new:before {
+	content: "\e6a5"
+}
+
+.icon-bae-new:before {
+	content: "\e6a6"
+}
+
+.icon-qns-new:before {
+	content: "\e6a7"
+}
+
+.icon-mct-new:before {
+	content: "\e6a8"
+}
+
+.icon-lss-new:before {
+	content: "\e6a9"
+}
+
+.icon-bfr-new:before {
+	content: "\e6aa"
+}
+
+.icon-ocr-new:before {
+	content: "\e6ab"
+}
+
+.icon-bmr-new:before {
+	content: "\e6ac"
+}
+
+.icon-bml-new:before {
+	content: "\e6ad"
+}
+
+.icon-palo-new:before {
+	content: "\e6ae"
+}
+
+.icon-bch-new:before {
+	content: "\e6af"
+}
+
+.icon-website-new:before {
+	content: "\e6b0"
+}
+
+.icon-video-new:before {
+	content: "\e6b1"
+}
+
+.icon-image-new:before {
+	content: "\e6b2"
+}
+
+.icon-stgcdn-new:before {
+	content: "\e6b3"
+}
+
+.icon-bigdata-new:before {
+	content: "\e6b4"
+}
+
+.icon-app-new:before {
+	content: "\e6b5"
+}
+
+.icon-marketing-new:before {
+	content: "\e6b6"
+}
+
+.icon-education-new:before {
+	content: "\e6b7"
+}
+
+.icon-iot-new:before {
+	content: "\e6b8"
+}
+
+.icon-hybridcloud-new:before {
+	content: "\e6b9"
+}
+
+.icon-new-ribbon:before {
+	content: "\e6bb"
+}
+
+.icon-sale-tag:before {
+	content: "\e6bc"
+}
+
+.icon-cert:before {
+	content: "\e6bd"
+}
+
+.icon-license:before {
+	content: "\e6be"
+}
+
+.icon-lss-commercial:before {
+	content: "\e6c0"
+}
+
+.icon-saml:before {
+	content: "\e6c2"
+}
+
+.icon-agent-customer:before {
+	content: "\e686"
+}
+
+.icon-agent-info:before {
+	content: "\e687"
+}
+
+.icon-agent-resource:before {
+	content: "\e6c3"
+}
+
+.icon-star-solid:before {
+	content: "\e6c4"
+}
+
+.icon-star-hollow:before {
+	content: "\e6c5"
+}
+
+.icon-forum:before {
+	content: "\e6c6"
+}
+
+.icon-scrolltop:before {
+	content: "\e6c7"
+}
+
+.icon-write:before {
+	content: "\e6c8"
+}
+
+.icon-faq:before {
+	content: "\e6c9"
+}
+
+.icon-hot:before {
+	content: "\e6ca"
+}
+
+.icon-dialogue:before {
+	content: "\e6cb"
+}
+
+.icon-new:before {
+	content: "\e6cd"
+}
+
+.icon-newdialog:before {
+	content: "\e6ce"
+}
+
+.icon-vod-media:before {
+	content: "\e681"
+}
+
+.icon-bml-experiment:before {
+	content: "\e6cf"
+}
+
+.icon-location1:before {
+	content: "\e6d0"
+}
+
+.icon-move:before {
+	content: "\e6d3"
+}
+
+.icon-bml-dataset:before {
+	content: "\e676"
+}
+
+.icon-bml-model:before {
+	content: "\e677"
+}
+
+.icon-zoom-in:before {
+	content: "\e6d6"
+}
+
+.icon-zoom-out:before {
+	content: "\e6d7"
+}
+
+.icon-original-size:before {
+	content: "\e6d8"
+}
+
+.icon-voice:before {
+	content: "\e6d9"
+}
+
+.icon-iot-rule-engine:before {
+	content: "\e6db"
+}
+
+.icon-subnet:before {
+	content: "\e6df"
+}
+
+.icon-bml-evaluate:before {
+	content: "\e6d1"
+}
+
+.icon-bml-history:before {
+	content: "\e6d4"
+}
+
+.icon-saveas:before {
+	content: "\e6d5"
+}
+
+.icon-save:before {
+	content: "\e6e1"
+}
+
+.icon-stop:before {
+	content: "\e6e2"
+}
+
+.icon-play:before {
+	content: "\e6e3"
+}
+
+.icon-bml-train:before {
+	content: "\e6e4"
+}
+
+.icon-bml-predict:before {
+	content: "\e6e6"
+}
+
+.icon-bml-scheduling:before {
+	content: "\e6e7"
+}
+
+.icon-fail-reverse:before {
+	content: "\e6d2"
+}
+
+.icon-warning-new:before {
+	content: "\e6e5"
+}
+
+.icon-ok-reverse:before {
+	content: "\e6e8"
+}
+
+.icon-bml-waiting:before {
+	content: "\e6e9"
+}
+
+.icon-bucket:before {
+	content: "\e6ea"
+}
+
+.icon-bps:before {
+	content: "\e6ed"
+}
+
+.icon-lss-audit:before {
+	content: "\e6f1"
+}
+
+.icon-iot-device-group:before {
+	content: "\e6f2"
+}
+
+.icon-iot-device-list:before {
+	content: "\e6f3"
+}
+
+.icon-game-solution:before {
+	content: "\e6c1"
+}
+
+.icon-marketing-solution:before {
+	content: "\e6f4"
+}
+
+.icon-education-solution:before {
+	content: "\e6f5"
+}
+
+.icon-iot-solution:before {
+	content: "\e6f6"
+}
+
+.icon-hybridcloud-solution:before {
+	content: "\e6f7"
+}
+
+.icon-finance-solution:before {
+	content: "\e6f8"
+}
+
+.icon-website-solution:before {
+	content: "\e6f9"
+}
+
+.icon-video-solution:before {
+	content: "\e6fa"
+}
+
+.icon-image-solution:before {
+	content: "\e6fb"
+}
+
+.icon-stg_cdn-solution:before {
+	content: "\e6fc"
+}
+
+.icon-opinion-solution:before {
+	content: "\e6fd"
+}
+
+.icon-data_warehousing-solution:before {
+	content: "\e6fe"
+}
+
+.icon-app-solution:before {
+	content: "\e6ff"
+}
+
+.icon-platform-calculate-solution:before {
+	content: "\e700"
+}
+
+.icon-platform-image-solution:before {
+	content: "\e701"
+}
+
+.icon-recommender-solution:before {
+	content: "\e7f8"
+}
+
+.icon-platform-industry-solution:before {
+	content: "\e702"
+}
+
+.icon-log_analysis-solution:before {
+	content: "\e703"
+}
+
+.icon-lifescience-solution:before {
+	content: "\e704"
+}
+
+.icon-plus:before {
+	content: "\e600"
+}
+
+.icon-magnifier:before {
+	content: "\e601"
+}
+
+.icon-minus:before {
+	content: "\e602"
+}
+
+.icon-sdk-upload:before {
+	content: "\e709"
+}
+
+.icon-console-upload:before {
+	content: "\e70a"
+}
+
+.icon-trash:before {
+	content: "\e604"
+}
+
+.icon-tool-upload:before {
+	content: "\e70b"
+}
+
+.icon-downarrow:before {
+	content: "\e605"
+}
+
+.icon-lss-session:before {
+	content: "\e670"
+}
+
+.icon-location:before {
+	content: "\e606"
+}
+
+.icon-lss-template:before {
+	content: "\e70d"
+}
+
+.icon-collapse:before {
+	content: "\e607"
+}
+
+.icon-refresh:before {
+	content: "\e608"
+}
+
+.icon-bss-security:before {
+	content: "\e70f"
+}
+
+.icon-sort-normal:before {
+	content: "\e711"
+}
+
+.icon-sort-descending:before {
+	content: "\e712"
+}
+
+.icon-sort-ascending:before {
+	content: "\e713"
+}
+
+.icon-entertainment-solution:before {
+	content: "\e714"
+}
+
+.icon-security-solution:before {
+	content: "\e719"
+}
+
+.icon-renewmanage:before {
+	content: "\e718"
+}
+
+.icon-vpn:before {
+	content: "\e722"
+}
+
+.icon-deposit:before {
+	content: "\e71b"
+}
+
+.icon-sdk:before {
+	content: "\e618"
+}
+
+.icon-accountrecharge:before {
+	content: "\e688"
+}
+
+.icon-bccinstance:before {
+	content: "\e619"
+}
+
+.icon-dealrecord-old:before {
+	content: "\e68a"
+}
+
+.icon-bccimage:before {
+	content: "\e61a"
+}
+
+.icon-billingorder:before {
+	content: "\e68b"
+}
+
+.icon-cdndomain:before {
+	content: "\e61b"
+}
+
+.icon-accountmanage:before {
+	content: "\e68c"
+}
+
+.icon-cdnrefresh:before {
+	content: "\e61c"
+}
+
+.icon-invoicemanage:before {
+	content: "\e68d"
+}
+
+.icon-coupon:before {
+	content: "\e696"
+}
+
+.icon-warning:before {
+	content: "\e61e"
+}
+
+.icon-discountmanage:before {
+	content: "\e71c"
+}
+
+.icon-statistics:before {
+	content: "\e61f"
+}
+
+.icon-eipgroup:before {
+	content: "\e72b"
+}
+
+.icon-sendauth:before {
+	content: "\e620"
+}
+
+.icon-announcement:before {
+	content: "\e71d"
+}
+
+.icon-block:before {
+	content: "\e621"
+}
+
+.icon-install:before {
+	content: "\e71e"
+}
+
+.icon-bounce:before {
+	content: "\e623"
+}
+
+.icon-common-payment:before {
+	content: "\e71f"
+}
+
+.icon-sendingmail:before {
+	content: "\e624"
+}
+
+.icon-common-reliable:before {
+	content: "\e720"
+}
+
+.icon-template:before {
+	content: "\e625"
+}
+
+.icon-common-customer-support:before {
+	content: "\e721"
+}
+
+.icon-deploy:before {
+	content: "\e626"
+}
+
+.icon-scale:before {
+	content: "\e627"
+}
+
+.icon-refundmanage:before {
+	content: "\e731"
+}
+
+.icon-user:before {
+	content: "\e628"
+}
+
+.icon-view:before {
+	content: "\e732"
+}
+
+.icon-money:before {
+	content: "\e629"
+}
+
+.icon-create:before {
+	content: "\e62a"
+}
+
+.icon-list:before {
+	content: "\e62b"
+}
+
+.icon-bookmark:before {
+	content: "\e62c"
+}
+
+.icon-adviser-solution:before {
+	content: "\e723"
+}
+
+.icon-guide:before {
+	content: "\e62d"
+}
+
+.icon-platform-ai-solution:before {
+	content: "\e724"
+}
+
+.icon-balance:before {
+	content: "\e62e"
+}
+
+.icon-ok:before {
+	content: "\e62f"
+}
+
+.icon-customer_service-solution:before {
+	content: "\e726"
+}
+
+.icon-fail:before {
+	content: "\e630"
+}
+
+.icon-waiting:before {
+	content: "\e631"
+}
+
+.icon-status:before {
+	content: "\e632"
+}
+
+.icon-full-screen:before {
+	content: "\e70c"
+}
+
+.icon-buy:before {
+	content: "\e636"
+}
+
+.icon-info:before {
+	content: "\e638"
+}
+
+.icon-order-list:before {
+	content: "\e63a"
+}

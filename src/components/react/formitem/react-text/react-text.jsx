@@ -1,6 +1,11 @@
 import React from 'react';
+import './react-text-style.scss';
 
-export default class Test extends React.PureComponent {
+export default class MyReactFormItem extends React.PureComponent {
+  static defaultProps = {
+    value: ''
+  };
+
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
@@ -16,6 +21,10 @@ export default class Test extends React.PureComponent {
     // 获取表单项 value 属性
     const {value} = this.props;
 
-    return <input type="text" value={value} onChange={this.handleChange} />;
+    return (
+      <div className="react-text-wrapper">
+        <input type="text" value={value} onChange={this.handleChange} />
+      </div>
+    );
   }
 }
