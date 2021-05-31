@@ -6,14 +6,14 @@ type CustomSchemaType = 'custom-react-select' & SchemaType;
 export class ReactSelectPlugin extends BasePlugin {
   rendererName = 'custom-react-select-control';
   $schema = '/schemas/UnkownSchema.json';
-  name = 'custom-react-select';
-  description = 'custom-react-select';
-  tags = ['表单项'];
-  icon = 'fa fa-square';
+  name = 'react-select';
+  description = 'react-select';
+  tags = ['自定义', '表单项'];
+  icon = 'fa fa-file-code-o';
   scaffold: SchemaObject = {
     type: 'custom-react-select' as CustomSchemaType,
-    label: 'custom-react-select',
-    name: 'custom-react-select',
+    label: 'react-select',
+    name: 'react-select',
     options: [
       {
         label: 'A',
@@ -31,7 +31,7 @@ export class ReactSelectPlugin extends BasePlugin {
   };
   previewSchema: any = {
     type: 'custom-react-select',
-    label: 'custom-react-select'
+    label: 'react-select'
   };
 
   panelTitle = '下拉框';

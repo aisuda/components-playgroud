@@ -25,18 +25,32 @@ const schema = {
       controls: [
         {
           type: 'custom-react-text',
-          name: "react-text",
-          label: "React-Text"
+          name: 'react-text',
+          label: 'React-Text'
         },
         {
-          type: "custom-react-select",
-          name: "react-select",
-          label: "React-Select"
+          type: 'custom-react-select',
+          name: 'react-select',
+          label: 'React-Select',
+          options: [
+            {
+              label: 'A',
+              value: 'a'
+            },
+            {
+              label: 'B',
+              value: 'b'
+            },
+            {
+              label: 'C',
+              value: 'c'
+            }
+          ]
         },
         {
-          type: "custom-hello-react",
-          name: "hello-react",
-          label: "Hello-React"
+          type: 'custom-hello-react',
+          name: 'hello-react',
+          label: 'Hello-React'
         }
       ]
     }

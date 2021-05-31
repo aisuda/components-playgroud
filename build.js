@@ -45,7 +45,7 @@ for (const item of items) {
   if (styleFile) {
     const style = fs.readFileSync(path.resolve(cmptPath, styleFile[0].match(/import \'(\S*)'/)[1])).toString();
     files.push({
-      name: `${name}-style`,
+      name: 'style',
       type: 'style',
       source: style,
       ext: 'scss'
@@ -73,7 +73,7 @@ for (const item of items) {
       usage: usageMap[usage],
       type: name,
       source,
-      entry: JSON.stringify(entry),
+      entry,
       files,
       status: 1,
       description: ''
