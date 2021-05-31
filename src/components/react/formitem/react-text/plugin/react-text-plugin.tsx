@@ -1,23 +1,23 @@
 import {SchemaObject, SchemaType} from 'amis';
 import {BasePlugin, getSchemaTpl, registerEditorPlugin} from 'amis-editor';
 
-type CustomSchemaType = 'custom-react-text' & SchemaType;
+type CustomSchemaType = 'react-text' & SchemaType;
 
 export class ReactTextPlugin extends BasePlugin {
   rendererName = 'custom-react-text-control';
   $schema = '/schemas/UnkownSchema.json';
-  name = 'custom-react-text';
-  description = 'custom-react-text';
-  tags = ['表单项'];
-  icon = 'fa fa-square';
+  name = 'react-text';
+  description = 'react-text';
+  tags = ['自定义', '表单项'];
+  icon = 'fa fa-file-code-o';
   scaffold: SchemaObject = {
     type: 'custom-react-text' as CustomSchemaType,
-    label: 'custom-react-text',
-    name: 'custom-react-text'
+    label: 'react-text',
+    name: 'react-text'
   };
   previewSchema: any = {
     type: 'custom-react-text',
-    label: 'custom-react-text'
+    label: 'react-text'
   };
 
   panelTitle = '输入框';

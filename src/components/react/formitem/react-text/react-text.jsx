@@ -1,5 +1,5 @@
 import React from 'react';
-import './react-text-style.scss';
+import './style.scss';
 
 export default class MyReactFormItem extends React.PureComponent {
   static defaultProps = {

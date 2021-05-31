@@ -1,6 +1,6 @@
 // @ts-ignore
 import $ from 'jquery';
-import './jquery-text-style.scss';
+import './style.scss';
 
 export default {
   template: `<input class="txt" id="j_name" />`,
