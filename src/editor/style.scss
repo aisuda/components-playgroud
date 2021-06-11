@@ -1,3 +1,6 @@
+.cxd-Layout {
+  position: absolute;
+}
 .Editor-header {
     // position: relative;
     text-align: right;
@@ -79,7 +82,7 @@
   }
   
   .Editor-body {
-    position: relative;
+    position: absolute;
     display: flex;
     height: 100%;
   

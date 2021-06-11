@@ -103,6 +103,7 @@ export default class SchemaEditor extends React.Component {
                 __uri('amis/schema.json')
               }`}
               iframeUrl="/editor"
+              plugins={plugins}
             />
           </div>
         </div>

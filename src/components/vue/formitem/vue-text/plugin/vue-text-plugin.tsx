@@ -2,7 +2,7 @@
  * @file 编辑器扩展, 增加自定义组件
  */
 import {SchemaObject, SchemaType} from 'amis';
-import {BasePlugin, registerEditorPlugin} from 'amis-editor';
+import {BasePlugin} from 'amis-editor';
 
 type CustomSchemaType = 'custom-vue-text' & SchemaType;
 
@@ -34,5 +34,3 @@ export class VueTextPlugin extends BasePlugin {
     }
   ];
 }
-
-registerEditorPlugin(VueTextPlugin);

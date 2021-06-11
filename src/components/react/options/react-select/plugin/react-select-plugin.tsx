@@ -1,5 +1,5 @@
 import {SchemaObject, SchemaType} from 'amis';
-import {BasePlugin, registerEditorPlugin} from 'amis-editor';
+import {BasePlugin} from 'amis-editor';
 
 type CustomSchemaType = 'custom-react-select' & SchemaType;
 
@@ -43,5 +43,3 @@ export class ReactSelectPlugin extends BasePlugin {
     }
   ];
 }
-
-registerEditorPlugin(ReactSelectPlugin);
