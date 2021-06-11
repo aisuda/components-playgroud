@@ -1,5 +1,5 @@
 import {SchemaObject, SchemaType} from 'amis';
-import {BasePlugin, getSchemaTpl, registerEditorPlugin} from 'amis-editor';
+import {BasePlugin} from 'amis-editor';
 
 type CustomSchemaType = 'react-text' & SchemaType;
 
@@ -31,5 +31,3 @@ export class ReactTextPlugin extends BasePlugin {
     }
   ];
 }
-
-registerEditorPlugin(ReactTextPlugin);
