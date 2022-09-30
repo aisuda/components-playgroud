@@ -1,231 +1,231 @@
-import React from 'react';
-import {Route, Switch} from 'react-router-dom';
-import Editor from './editor/Editor';
-import axios from 'axios';
-import copy from 'copy-to-clipboard';
-import {render} from 'amis';
-import {toast} from 'amis/lib/components/Toast';
-import {Framework, registerComponents, Usage} from './util';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Editor from "./editor/Editor";
+import axios from "axios";
+import copy from "copy-to-clipboard";
+import { render } from "amis";
+import { toast } from "amis";
+import { Framework, registerComponents, Usage } from "./util";
 
 // jquery
-import JqueryText from './components/jquery/formitem/jquery-text/jquery-text';
-import JquerySelect from './components/jquery/options/jquery-select/jquery-select';
-import HelloJquery from './components/jquery/renderer/hello-jquery/hello-jquery';
+import JqueryText from "./components/jquery/formitem/jquery-text/jquery-text";
+import JquerySelect from "./components/jquery/options/jquery-select/jquery-select";
+import HelloJquery from "./components/jquery/renderer/hello-jquery/hello-jquery";
 
 // reqct
-import ReactText from './components/react/formitem/react-text/react-text';
-import ReactSelect from './components/react/options/react-select/react-select';
-import HelloReact from './components/react/renderer/hello-react/hello-react';
+import ReactText from "./components/react/formitem/react-text/react-text";
+import ReactSelect from "./components/react/options/react-select/react-select";
+import HelloReact from "./components/react/renderer/hello-react/hello-react";
 
 // vue
-import VueText from './components/vue/formitem/vue-text/vue-text';
-import VueSelect from './components/vue/options/vue-select/vue-select';
-import HelloVue from './components/vue/renderer/hello-vue/hello-vue';
+import VueText from "./components/vue/formitem/vue-text/vue-text";
+import VueSelect from "./components/vue/options/vue-select/vue-select";
+import HelloVue from "./components/vue/renderer/hello-vue/hello-vue";
 
 // util
-import './util/hello.js';
+import "./util/hello.js";
 
 registerComponents([
   // jquery
   {
-    key: 'jquery-text',
+    key: "jquery-text",
     usage: Usage.formitem,
     framework: Framework.jquery,
-    component: JqueryText
+    component: JqueryText,
   },
   {
-    key: 'jquery-select',
+    key: "jquery-select",
     usage: Usage.options,
     framework: Framework.jquery,
-    component: JquerySelect
+    component: JquerySelect,
   },
   {
-    key: 'hello-jquery',
+    key: "hello-jquery",
     usage: Usage.renderer,
     framework: Framework.jquery,
-    component: HelloJquery
+    component: HelloJquery,
   },
 
   // react
   {
-    key: 'react-text',
+    key: "react-text",
     usage: Usage.formitem,
     framework: Framework.react,
-    component: ReactText
+    component: ReactText,
   },
   {
-    key: 'react-select',
+    key: "react-select",
     usage: Usage.options,
     framework: Framework.react,
-    component: ReactSelect
+    component: ReactSelect,
   },
   {
-    key: 'hello-react',
+    key: "hello-react",
     usage: Usage.renderer,
     framework: Framework.react,
-    component: HelloReact
+    component: HelloReact,
   },
 
   // vue
   {
-    key: 'vue-text',
+    key: "vue-text",
     usage: Usage.formitem,
     framework: Framework.vue,
-    component: VueText
+    component: VueText,
   },
   {
-    key: 'vue-select',
+    key: "vue-select",
     usage: Usage.options,
     framework: Framework.vue,
-    component: VueSelect
+    component: VueSelect,
   },
   {
-    key: 'hello-vue',
+    key: "hello-vue",
     usage: Usage.renderer,
     framework: Framework.vue,
-    component: HelloVue
-  }
+    component: HelloVue,
+  },
 ]);
 
 const Components = () => (
   <>
     {render(
       {
-        type: 'page',
-        title: '自定义组件测试',
+        type: "page",
+        title: "自定义组件测试",
         body: [
           {
-            type: 'wrapper',
-            size: 'sm',
+            type: "wrapper",
+            size: "sm",
             body: {
-              type: 'custom-hello-react'
-            }
+              type: "custom-hello-react",
+            },
           },
 
           {
-            type: 'form',
-            title: 'React 组件',
+            type: "form",
+            title: "React 组件",
             controls: [
               {
-                type: 'custom-react-text',
-                name: 'react-text',
-                label: 'React-Text'
+                type: "custom-react-text",
+                name: "react-text",
+                label: "React-Text",
               },
               {
-                type: 'custom-react-select',
-                name: 'react-select',
-                label: 'React-Select',
+                type: "custom-react-select",
+                name: "react-select",
+                label: "React-Select",
                 options: [
                   {
-                    label: 'A',
-                    value: 'a'
+                    label: "A",
+                    value: "a",
                   },
                   {
-                    label: 'B',
-                    value: 'b'
+                    label: "B",
+                    value: "b",
                   },
                   {
-                    label: 'C',
-                    value: 'c'
-                  }
-                ]
-              }
+                    label: "C",
+                    value: "c",
+                  },
+                ],
+              },
             ],
             debug: true,
-            mode: 'horizontal'
+            mode: "horizontal",
           },
           {
-            type: 'divider'
+            type: "divider",
           },
           {
-            type: 'wrapper',
-            size: 'sm',
+            type: "wrapper",
+            size: "sm",
             body: {
-              type: 'custom-hello-vue'
-            }
+              type: "custom-hello-vue",
+            },
           },
 
           {
-            type: 'form',
-            title: 'Vue 组件',
+            type: "form",
+            title: "Vue 组件",
             controls: [
               {
-                type: 'custom-vue-text',
-                name: 'vue-text',
-                label: 'Vue-Text'
+                type: "custom-vue-text",
+                name: "vue-text",
+                label: "Vue-Text",
               },
               {
-                type: 'custom-vue-select',
-                name: 'vue-select',
-                label: 'Vue-Select',
+                type: "custom-vue-select",
+                name: "vue-select",
+                label: "Vue-Select",
                 options: [
                   {
-                    label: 'A',
-                    value: 'a'
+                    label: "A",
+                    value: "a",
                   },
                   {
-                    label: 'B',
-                    value: 'b'
+                    label: "B",
+                    value: "b",
                   },
                   {
-                    label: 'C',
-                    value: 'c'
-                  }
-                ]
-              }
+                    label: "C",
+                    value: "c",
+                  },
+                ],
+              },
             ],
             debug: true,
-            mode: 'horizontal'
+            mode: "horizontal",
           },
 
           {
-            type: 'divider'
+            type: "divider",
           },
 
           {
-            type: 'wrapper',
-            size: 'sm',
+            type: "wrapper",
+            size: "sm",
             body: {
-              type: 'custom-hello-jquery'
-            }
+              type: "custom-hello-jquery",
+            },
           },
           {
-            type: 'form',
-            title: 'jquery 组件',
+            type: "form",
+            title: "jquery 组件",
             controls: [
               {
-                type: 'custom-jquery-text',
-                name: 'jquery-text',
-                label: 'jquery-Text'
+                type: "custom-jquery-text",
+                name: "jquery-text",
+                label: "jquery-Text",
               },
               {
-                type: 'custom-jquery-select',
-                name: 'jquery-select',
-                label: 'jquery-Select',
-                placeholder: '请选择',
+                type: "custom-jquery-select",
+                name: "jquery-select",
+                label: "jquery-Select",
+                placeholder: "请选择",
                 options: [
                   {
-                    label: 'A',
-                    value: 'a'
+                    label: "A",
+                    value: "a",
                   },
                   {
-                    label: 'B',
-                    value: 'b'
+                    label: "B",
+                    value: "b",
                   },
                   {
-                    label: 'C',
-                    value: 'c'
-                  }
-                ]
-              }
+                    label: "C",
+                    value: "c",
+                  },
+                ],
+              },
             ],
             debug: true,
-            mode: 'horizontal'
-          }
-        ]
+            mode: "horizontal",
+          },
+        ],
       },
       {
-        theme: 'cxd'
+        theme: "cxd",
       },
       {
         // env
@@ -238,7 +238,7 @@ const Components = () => (
 
         updateLocation: (
           location: string /*目标地址*/,
-          replace: boolean /*是replace，还是push？*/
+          replace?: boolean /*是replace，还是push？*/
         ) => {
           // 地址替换，跟 jumpTo 类似
         },
@@ -249,7 +249,7 @@ const Components = () => (
           data, // 请求数据
           responseType,
           config, // 其他配置
-          headers // 请求头
+          headers, // 请求头
         }: any) => {
           config = config || {};
           config.withCredentials = true;
@@ -263,7 +263,7 @@ const Components = () => (
 
           config.headers = headers || {};
 
-          if (method !== 'post' && method !== 'put' && method !== 'patch') {
+          if (method !== "post" && method !== "put" && method !== "patch") {
             if (data) {
               config.params = data;
             }
@@ -271,16 +271,16 @@ const Components = () => (
             return (axios as any)[method](url, config);
           } else if (data && data instanceof FormData) {
             config.headers = config.headers || {};
-            config.headers['Content-Type'] = 'multipart/form-data';
+            config.headers["Content-Type"] = "multipart/form-data";
           } else if (
             data &&
-            typeof data !== 'string' &&
+            typeof data !== "string" &&
             !(data instanceof Blob) &&
             !(data instanceof ArrayBuffer)
           ) {
             data = JSON.stringify(data);
             config.headers = config.headers || {};
-            config.headers['Content-Type'] = 'application/json';
+            config.headers["Content-Type"] = "application/json";
           }
 
           return (axios as any)[method](url, data, config);
@@ -298,10 +298,10 @@ const Components = () => (
         // confirm: msg => {
         //   return true;
         // },
-        copy: content => {
+        copy: (content) => {
           copy(content);
-          toast.success('内容已复制到粘贴板');
-        }
+          toast.success("内容已复制到粘贴板");
+        },
       }
     )}
   </>

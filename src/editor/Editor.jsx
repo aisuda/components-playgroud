@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {Editor} from 'amis-editor';
-import {__uri} from 'amis/lib/utils/helper';
 
 // import styles
 import 'amis/lib/themes/default.css';
@@ -98,10 +97,6 @@ export default class SchemaEditor extends React.Component {
               onChange={this.handleChange}
               className="is-fixed"
               theme="cxd"
-              $schemaUrl={`${
-                // @ts-ignore
-                __uri('amis/schema.json')
-              }`}
               iframeUrl="/editor"
               plugins={plugins}
             />

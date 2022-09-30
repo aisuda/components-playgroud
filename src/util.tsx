@@ -1,19 +1,23 @@
-import React from 'react';
+import React from "react";
 // @ts-ignore
-import Vue from 'vue/dist/vue.min';
-import {extendObject} from 'amis/lib/utils/helper';
-import {registerFormItem, registerOptionsControl, registerRenderer} from 'amis';
+import Vue from "vue/dist/vue.min";
+import { extendObject } from "amis";
+import {
+  registerFormItem,
+  registerOptionsControl,
+  registerRenderer,
+} from "amis";
 
 export enum Framework {
   react = 0,
   vue = 1,
-  jquery = 2
+  jquery = 2,
 }
 
 export enum Usage {
   renderer = 0,
   formitem = 1,
-  options = 2
+  options = 2,
 }
 
 export function registerComponents(
@@ -35,20 +39,20 @@ export function registerComponents(
     const registerMap: any = {
       0: registerRenderer,
       1: registerFormItem,
-      2: registerOptionsControl
+      2: registerOptionsControl,
     };
 
     const resolverMap: any = {
       0: (i: any) => i,
       1: resolveVue,
-      2: resolveJquery
+      2: resolveJquery,
     };
 
     const rendererConfig: any = {
-      component: resolverMap[item.framework](item.component)
+      component: resolverMap[item.framework](item.component),
     };
 
-    item.key = 'custom-' + item.key;
+    item.key = "custom-" + item.key;
 
     if (item.usage === 0) {
       rendererConfig.test = new RegExp(`(^|\\/)${item.key}$`);
@@ -68,7 +72,7 @@ export function registerComponents(
 export const resolveJquery = (jqueryObj: any) => {
   if (
     !jqueryObj ||
-    (typeof jqueryObj !== 'function' && typeof jqueryObj !== 'object')
+    (typeof jqueryObj !== "function" && typeof jqueryObj !== "object")
   ) {
     return;
   }
@@ -81,21 +85,21 @@ export const resolveJquery = (jqueryObj: any) => {
       super(props);
       this.domRef = this.domRef.bind(this);
       this.instance =
-        typeof jqueryObj === 'function' ? new jqueryObj() : jqueryObj;
+        typeof jqueryObj === "function" ? new jqueryObj() : jqueryObj;
     }
 
     componentDidMount() {
-      const {onMount} = this.instance;
+      const { onMount } = this.instance;
       onMount && onMount.apply(this.instance, [this.props]);
     }
 
     componentDidUpdate(prevProps: any) {
-      const {onUpdate} = this.instance;
+      const { onUpdate } = this.instance;
       onUpdate && onUpdate.apply(this.instance, [this.props, prevProps]);
     }
 
     componentWillUnmount() {
-      const {onUnmout} = this.instance;
+      const { onUnmout } = this.instance;
       onUnmout && onUnmout.apply(this.instance, this.props as any);
     }
 
@@ -111,9 +115,9 @@ export const resolveJquery = (jqueryObj: any) => {
 
       let template = this.instance.template;
 
-      if (typeof template === 'string') {
+      if (typeof template === "string") {
         this.dom.innerHTML = template;
-      } else if (typeof template === 'function') {
+      } else if (typeof template === "function") {
         this.dom.innerHTML = template(this.props);
       }
     }
@@ -127,7 +131,7 @@ export const resolveJquery = (jqueryObj: any) => {
 };
 
 export const resolveVue = (vueObj: any) => {
-  if (!vueObj || (typeof vueObj !== 'function' && typeof vueObj !== 'object')) {
+  if (!vueObj || (typeof vueObj !== "function" && typeof vueObj !== "object")) {
     return;
   }
 
@@ -142,21 +146,21 @@ export const resolveVue = (vueObj: any) => {
     }
 
     componentDidMount() {
-      const {amisData, amisFunc} = this.resolveAmisProps();
+      const { amisData, amisFunc } = this.resolveAmisProps();
 
-      const {data, ...rest} = (vueObj =
-        typeof vueObj === 'function' ? new vueObj() : vueObj);
+      const { data, ...rest } = (vueObj =
+        typeof vueObj === "function" ? new vueObj() : vueObj);
 
       // 传入的Vue属性
       this.vm = new Vue({
         data: extendObject(
           amisData,
-          typeof data === 'function' ? data() : data
+          typeof data === "function" ? data() : data
         ),
-        ...rest
+        ...rest,
       });
 
-      Object.keys(amisFunc).forEach(key => {
+      Object.keys(amisFunc).forEach((key) => {
         const func = amisFunc[key];
         this.vm.$on(
           key,
@@ -176,21 +180,21 @@ export const resolveVue = (vueObj: any) => {
       let amisFunc: any = {},
         amisData: any = {};
 
-      Object.keys(this.props).forEach(key => {
+      Object.keys(this.props).forEach((key) => {
         const value = this.props[key];
-        if (typeof value === 'function') {
+        if (typeof value === "function") {
           amisFunc[key] = value;
         } else {
           amisData[key] = value;
         }
       });
-      return {amisData, amisFunc};
+      return { amisData, amisFunc };
     }
 
     componentDidUpdate() {
       Object.keys(this.props).forEach(
-        key =>
-          typeof this.props[key] !== 'function' &&
+        (key) =>
+          typeof this.props[key] !== "function" &&
           (this.vm[key] = this.props[key])
       );
     }
